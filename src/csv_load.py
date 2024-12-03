@@ -2,7 +2,7 @@ import csv
 from typing import List, Dict
 from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.document_loaders.csv_loader import CSVLoader
-class csv_loader:
+class CSVLoaderCustom:
     def __init__(self, path_file: str, delimiter: str = ",", quotechar: str = '"') -> None:
         self._path = path_file
         self._delimiter = delimiter

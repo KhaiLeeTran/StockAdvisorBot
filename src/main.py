@@ -10,7 +10,7 @@ import streamlit as st
 
 df = DataAnalysis('D:\project\chatbot_stock\data\dataframe.csv')
 
-csv_ = csv_loader(path_file='D:\project\chatbot_stock\data\dataframe.csv')
+csv_ = CSVLoaderCustom(path_file='D:\project\chatbot_stock\data\dataframe.csv')
 loader = csv_.split_load()
 # Khởi tạo Chat
 chat_instance = Chat(
